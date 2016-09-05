@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.netease.course.domain.ElecTest" table="ELECTEST">
+		<id name="testID" type="java.lang.Integer" column="TESTID">
+			<generator class="native"></generator>
+		</id>
+		<property name="testName" type="java.lang.String" column="TESTNAME" />
+		<property name="testDate" type="java.util.Date" column="TESTDATE" />
+		<property name="testRemark" type="java.lang.String" column="TESTREMARK" />
+	</class>
+</hibernate-mapping>

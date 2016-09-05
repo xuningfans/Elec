@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 设置开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 设置UI标签的主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 配置struts的URL访问的后缀，改成do（此处可以不修改，此时默认是.action） -->
+	<constant name="struts.action.extension" value="do" />
+
+	<!-- 系统管理 -->
+	<package name="system" namespace="/system" extends="struts-default">
+		<action name="elecTestAction_*" class="elecTestAction" method="{1}">
+			<result name="save">/system/testAdd.jsp</result>
+		</action>
+	</package>
+
+</struts>
