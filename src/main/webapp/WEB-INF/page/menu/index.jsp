@@ -38,7 +38,7 @@ FORM {
 <title>国家电力监测中心</title>
 </head>
 <body onload="ini()">
-<form action="${pageContext.request.contextPath}/menu/home.jsp" method="post" target="_top">
+<form action="${pageContext.request.contextPath}/system/elecMenuAction_menuHome.do" method="post" target="_top">
 <table border="0" width="100%" id="table1" height="532" cellspacing="0" cellpadding="0" >
 	<tr>
 		<td>　</td>
